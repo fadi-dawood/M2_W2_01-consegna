@@ -190,9 +190,11 @@ Input: anno corrente = 2021, anno di nascita = 1996
 Output: età = 25, anni mancanti = 75
 */
 
-let age = 29
+let currentYear = 2023
+let birthdayYear = 1922
+let age = currentYear - birthdayYear
 if (age > 100){
-  console.log("Età superata")
+  console.log("Età = " + age +  ", superati 100 anni")
 } else {
   console.log("età = " + age + ", anni mancanti = " + (100 - age))
 }
